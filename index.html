@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animating HTML with D3</title>
+</head>
+<body>
+
+    <h1>This is a <span>nice</span> heading</h1>
+    <p>This is a <span>short</span> paragraph</p>
+    
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script>
+
+        //this code adds a button with a click function
+        d3.select("body")
+            .append("button")
+            .on("click", function(){
+                animatePage();
+            })
+            .text("click to change this page");
+
+        function animatePage(){
+            // put your code here
+        }
+    </script>
+</body>
+</html>
